@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html> <head> </head> 
+<body>
+    "Results are as follows:"
+   <ul>
+     <% @users_array.each do |user_record| %>
+        <li><%= user_record.id.to_s + "  " +  user_record.name + "  " +user_record.email %></li>
+     <%end %>
+   </ul> 
+   <a href="/new"> Add a new user </a><br>
+   <a href="/remove"> Delete a user</a>
+ </body>
+</html>
+
